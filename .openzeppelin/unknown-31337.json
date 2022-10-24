@@ -2,19 +2,19 @@
   "manifestVersion": "3.2",
   "admin": {
     "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-    "txHash": "0x3d42399359f7aed7c4ee676dafa441b5fe1425c345c5727a5d8de71a24f956ab"
+    "txHash": "0xfcc4773e34405ad4b3a48b8c2caa17aa6bf4e576932d664d839fed1aa0aa3ea5"
   },
   "proxies": [
     {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0xa5a6641465684aa0749d803b6f9c5f50ace0ec73b1647206be4552aa7ac41d73",
+      "txHash": "0xd305fbce8ac7283dea6dfa5c0c3b8c079fdb2f6c9e546b098224ea1e97b15e5a",
       "kind": "transparent"
     }
   ],
   "impls": {
-    "e3d35ebb3d888026c5c202011f8dafab9cd76dca9c803be1cbd928297084a458": {
+    "6d6760e4f3ee8ca1f9976e8a5877356e283eb3a51432dfc26a97bf37f9137621": {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "txHash": "0x3555e0c9032ac76aae1b771fa57a8a2ca68662fabaa45d87b134300954401a29",
+      "txHash": "0x5e5382d0145ae904d850b9d93e1c398b5ba680ae926f1b12f9b21d10307e43c0",
       "layout": {
         "solcVersion": "0.8.9",
         "storage": [
@@ -104,24 +104,24 @@
             "offset": 0,
             "slot": "201",
             "type": "t_mapping(t_uint256,t_bytes32)",
-            "contract": "Node",
-            "src": "contracts/Node.sol:10"
+            "contract": "NodeV2",
+            "src": "contracts/NodeV2.sol:10"
           },
           {
             "label": "expirations",
             "offset": 0,
             "slot": "202",
             "type": "t_mapping(t_uint256,t_uint256)",
-            "contract": "Node",
-            "src": "contracts/Node.sol:11"
+            "contract": "NodeV2",
+            "src": "contracts/NodeV2.sol:11"
           },
           {
             "label": "_claimed",
             "offset": 0,
             "slot": "203",
             "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
-            "contract": "Node",
-            "src": "contracts/Node.sol:12"
+            "contract": "NodeV2",
+            "src": "contracts/NodeV2.sol:12"
           }
         ],
         "types": {

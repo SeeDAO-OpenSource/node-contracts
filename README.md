@@ -1,1 +1,6 @@
 # SeeDAO Node contracts
+
+## 部署地址
+
+- `Goerli`: `0xB7b7A119246166e2A9360b693730476F0A5e0d37`
+- `Mainnet`: `0x9d34D407D8586478b3e4c39BE633ED3D7be1c80C`
