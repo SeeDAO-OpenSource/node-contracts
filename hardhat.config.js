@@ -3,6 +3,7 @@ require('@openzeppelin/hardhat-upgrades');
 require("dotenv").config();
 require("./tasks/root");
 require("./tasks/whitelist");
+require("./tasks/printWhitelist");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {

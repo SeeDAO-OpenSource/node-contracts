@@ -8,7 +8,7 @@ task("whitelist", "Set whitelist")
     .setAction(async (taskArgs, hre) => {
         const owner = await hre.ethers.getSigner(0);
 
-        const Node = await hre.ethers.getContractFactory("Node");
+        const Node = await hre.ethers.getContractFactory("NodeV2");
         const node = await Node.attach(taskArgs.contract);
         await node.connect(owner).setWhitelist(taskArgs.token, taskArgs.root, taskArgs.expiration);
         // await node.connect(owner).setURI("https://ipfs.io/ipfs/QmZQEPPGL9sNDekzjFeiAzCQNQHf6nBwGfxe7SrerXKLhq/{id}.json");
