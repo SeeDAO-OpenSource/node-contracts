@@ -17,7 +17,7 @@ contract Node is Initializable, ERC1155Upgradeable, OwnableUpgradeable {
     }
 
     function initialize() public initializer {
-        __ERC1155_init("");
+        __ERC1155_init("https://ipfs.io/ipfs/QmZQEPPGL9sNDekzjFeiAzCQNQHf6nBwGfxe7SrerXKLhq/{id}.json");
         __Ownable_init();
     }
 
