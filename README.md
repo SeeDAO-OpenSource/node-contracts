@@ -1,2 +1,1 @@
-# node-contracts
-SeeDAO Node congtracts
+# SeeDAO Node contracts

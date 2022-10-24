@@ -1,0 +1,13 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.12.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.8.0-rc.1",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.32"
+  }
+}
