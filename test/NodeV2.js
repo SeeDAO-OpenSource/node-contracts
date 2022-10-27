@@ -18,8 +18,6 @@ describe("NodeV2", function () {
 
         return { node, owner };
     }
-    describe("Deployment", function () {
-    });
     describe("Claim", function () {
         it("Should claim", async function () {
             // 2022-10-24 15:00:00

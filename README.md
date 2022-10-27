@@ -11,13 +11,13 @@
 ### 设置白名单
 
 先组装好白单并打印出`root`和`proof`。
-```js
+```bash
 npx hardhat root \
     --json ../data/no1.nodes.20221024.1.json \
     --token 1 > data/proof.json
 ```
 
-```js
+```bash
 npx hardhat whitelist \
     --contract 0x9d34D407D8586478b3e4c39BE633ED3D7be1c80C \
     --token 1 --root 0x61b960bf48f479edb5e6ee2634c2ce1c073275d4e3a72ddea58e0d8747ae5fce \
