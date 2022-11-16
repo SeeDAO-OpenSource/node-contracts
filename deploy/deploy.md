@@ -34,3 +34,18 @@ npx hardhat whitelist \
     --token 1 --root 0x7c26079375bb04ed5c29a83e7dad91eb29a1f577ec411cf2d391c1580c9e1a30 \
     --expiration 1666915200 --network mainnet
 ```
+
+## 设置第三批名单
+
+```bash
+npx hardhat root \
+    --json ../data/no1.nodes.20221027.2.json \
+    --token 1 > data/no1.proof.20221027.2.json
+```
+
+```bash
+npx hardhat whitelist \
+    --contract 0x9d34D407D8586478b3e4c39BE633ED3D7be1c80C \
+    --token 1 --root 0x08cf6b3d0fd041e65459ffb8042c97ee837db89f5a8ad7beec383ad1b9d1980f \
+    --expiration 1666915200 --network mainnet
+```

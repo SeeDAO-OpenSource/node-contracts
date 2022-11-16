@@ -4,6 +4,9 @@ require("dotenv").config();
 require("./tasks/root");
 require("./tasks/whitelist");
 require("./tasks/printWhitelist");
+ const { setGlobalDispatcher, ProxyAgent } = require('undici')
+ const proxyAgent = new ProxyAgent('http://127.0.0.1:7890')
+ setGlobalDispatcher(proxyAgent)
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {

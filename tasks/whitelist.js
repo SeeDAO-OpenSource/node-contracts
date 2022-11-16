@@ -10,6 +10,9 @@ task("whitelist", "Set whitelist")
 
         const Node = await hre.ethers.getContractFactory("NodeV2");
         const node = await Node.attach(taskArgs.contract);
-        await node.connect(owner).setWhitelist(taskArgs.token, taskArgs.root, taskArgs.expiration);
-        // await node.connect(owner).setURI("https://ipfs.io/ipfs/QmZQEPPGL9sNDekzjFeiAzCQNQHf6nBwGfxe7SrerXKLhq/{id}.json");
+        let feeData = await ethers.provider.getFeeData();
+        await node.connect(owner).setWhitelist(taskArgs.token, taskArgs.root, taskArgs.expiration, {
+            maxFeePerGas: feeData.maxFeePerGas,
+            maxPriorityFeePerGas: feeData.maxPriorityFeePerGas,
+        });
     });
