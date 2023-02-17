@@ -1,10 +1,10 @@
 require("hardhat/config");
 
-task("printWhitelist", "Set whitelist")
+task("printWhitelist", "Print whitelist")
     .addParam("contract", "The `Node` contract address")
     .addParam("token", "The target token Id")
     .setAction(async (taskArgs, hre) => {
-        const Node = await hre.ethers.getContractFactory("Node");
+        const Node = await hre.ethers.getContractFactory("NodeV2");
         const node = await Node.attach(taskArgs.contract);
         let root = await node.roots(taskArgs.token);
         let expiration = await node.expirations(taskArgs.token);

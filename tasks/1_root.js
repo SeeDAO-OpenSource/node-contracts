@@ -19,7 +19,9 @@ task("root", "Generate Merkle Tree Root from a list of accounts")
         // console.log("elements length:", elements.length);
         const merkleTree = new MerkleTree(elements, keccak256, { sort: true });
         const root = merkleTree.getHexRoot();
-        console.log("root:", root);
+        let res = {};
+        res['root'] = root;
+        // console.log("root:", root);
         // for (var i = 0; i < elements.length && i < 4; i++) {
         //     console.log("element:", elements[i]);
         //     let proof = merkleTree.getHexProof(elements[i])
@@ -29,5 +31,7 @@ task("root", "Generate Merkle Tree Root from a list of accounts")
             let proof = merkleTree.getHexProof(elements[i])
             data[i]['proof'] = proof;
         }
-        console.log(data);
+        // console.log(data);
+        res['leaves'] = data;
+        console.log(JSON.stringify(res, null, 2));
     });
