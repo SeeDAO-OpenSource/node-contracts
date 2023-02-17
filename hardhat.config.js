@@ -1,12 +1,13 @@
 require("@nomicfoundation/hardhat-toolbox");
 require('@openzeppelin/hardhat-upgrades');
 require("dotenv").config();
+require("./tasks/0_printWhitelist");
 require("./tasks/1_root");
 require("./tasks/2_whitelist");
-require("./tasks/0_printWhitelist");
- const { setGlobalDispatcher, ProxyAgent } = require('undici')
- const proxyAgent = new ProxyAgent('http://127.0.0.1:7890')
- setGlobalDispatcher(proxyAgent)
+require("./tasks/3_setURI");
+// const { setGlobalDispatcher, ProxyAgent } = require('undici')
+// const proxyAgent = new ProxyAgent('http://127.0.0.1:7890')
+// setGlobalDispatcher(proxyAgent)
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
